@@ -1,0 +1,26 @@
+.brand
+  &-list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__link
+      display: block
+      position: relative
+    &__logo
+      max-width: 100%
+      &_hover
+        max-width: 100%
+        position: absolute
+        left: 0
+        opacity: 0
+        transition: .5s
+        &:hover
+          opacity: 1
+
+
+@media  ( max-width: 1200px )
+  .brand
+    &-list
+      &__link
+        flex-basis: 15%
+  

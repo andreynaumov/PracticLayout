@@ -1,0 +1,56 @@
+.review
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../image/review/review-bg.jpg)
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  text-align: center
+  position: relative
+  &-window
+    max-width: 970px
+    margin: auto
+    padding: 50px 0 60px
+    border-radius: 5px
+    background-color: $white
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.28)
+    &__frame
+    &__photo
+      margin: auto
+      &_one
+        display: none
+        margin: auto
+      &_two
+        margin: auto
+        display: none
+      &_three
+        margin: auto
+        display: none
+      &_active
+        display: block
+    &__text
+      margin: 10px auto 25px
+      padding: 0 20px
+      max-width: 720px
+      font-size: 1rem
+      line-height: 2rem
+      letter-spacing: 1.5px
+      +MonReg
+    &__pagination
+      display: flex
+      justify-content: center
+    &__button
+      width: 15px
+      height: 15px
+      transform: rotate(45deg)
+      margin: 8px
+      background-color: #92d7af
+      cursor: pointer
+      &_active
+        background-color: #26af5f
+
+
+@media  ( max-width: 1200px )
+  .review
+    &-window
+      max-width: 80%
+  
+    

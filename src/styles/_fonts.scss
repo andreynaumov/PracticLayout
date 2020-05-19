@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url('../fonts/Montserrat/Montserrat-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Montserrat Semibold';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
+
+
+@mixin RobReg {
+  font-family: 'Roboto Regular', sans-serif;
+}
+
+@mixin MonReg {
+  font-family: 'Montserrat Regular', sans-serif;
+}
+
+@mixin MonMed {
+  font-family: 'Montserrat Medium', sans-serif;
+}
+
+@mixin MonSem {
+  font-family: 'Montserrat Semibold', sans-serif;
+}
+
+@mixin MonLig {
+  font-family: 'Montserrat Light', sans-serif;
+}

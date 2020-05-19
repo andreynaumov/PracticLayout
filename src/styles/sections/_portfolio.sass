@@ -1,0 +1,53 @@
+.portfolio
+  background-color: $bg-portfolio
+  text-align: center
+  &-title
+    max-width: 300px
+    margin: auto
+  &-main
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 95px
+  &-item
+    flex-basis: 32%
+    margin-bottom: 21px
+    &__image
+      max-width: 100%
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2)
+      transition: .5s
+      &:hover
+        box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.2)
+  &-button
+    padding: 16px 40px
+    border-radius: 5px
+    background-color: $button-portfolio
+    text-decoration: none
+    color: $white
+    font-size: 1.25rem
+    letter-spacing: .06rem
+    transition: .3s
+    +MonLig
+    &:hover
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+      
+
+
+@media ( max-width: 1200px )
+  .portfolio
+    &-item
+      &__image
+        &:hover
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2)
+    &-button
+      &:hover
+        box-shadow: none
+  
+
+@media ( max-width: 768px )
+  .portfolio
+    &-main
+      justify-content: center
+      flex-direction: column
+
+  

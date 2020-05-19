@@ -1,0 +1,62 @@
+.main
+  position: relative
+  color: $white
+  &__bg
+    &_one
+      background-image: url(../image/main/ocean.jpg)
+    &_two
+      top: 0
+      left: 0
+      right: 0
+      position: absolute
+      background-image: url(../image/main/girl.jpg)
+    &_three
+      top: 0
+      left: 0
+      right: 0
+      position: absolute
+      background-image: url(../image/main/child.jpg)
+  &-text
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    text-align: center
+    opacity: 0
+    transition: opacity .8s ease-in-out
+    &__title
+      max-width: 670px
+      margin: auto
+      padding: 420px 20px 0 
+      margin-bottom: 55px
+      text-transform: uppercase
+      font-size: 3.1rem
+      line-height: 71px
+      letter-spacing: 1px
+      +MonMed
+    &__subtitle
+      display: block
+      padding-bottom: 315px
+      font-size: 1.1rem
+      letter-spacing: 1.5px
+      +MonReg
+  &-control
+    position: absolute
+    display: flex
+    justify-content: center
+    bottom: 80px
+    left: 0
+    right: 0
+    &__item
+      width: 10px
+      height: 10px
+      transform: rotate(45deg)
+      margin: 8px
+      border: 1px solid #8a8f93
+      cursor: pointer
+      transition: 1s
+    &__active
+      border: 1px solid #cad6de
+      background-color: #cad6de
+  &_active
+    opacity: 1
+

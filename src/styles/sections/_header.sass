@@ -1,0 +1,62 @@
+.header
+  // background: $button-portfolio
+  background: rgba(0, 0, 0, 0)
+  // background: rgba(38, 175, 95, 0.9)
+  // background: linear-gradient(180deg, rgba(38,175,95,1) 0%, rgba(200,255,223,0.7651435574229692) 100%)
+  position: absolute
+  width: 100%
+  color: $white
+  z-index: 1
+  transition: .3s
+  &-navbar
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 69px
+    padding-bottom: 29px
+    text-transform: uppercase
+    +RobReg
+    &__logo
+      display: flex
+      align-items: center
+      width: 62px
+      height: 57px
+      padding: 0px 15px
+      border: 2px solid $white
+      border-radius: 3px
+      font-size: 1.2rem
+      line-height: 19px
+      text-align: center
+  &-menu
+    display: flex
+    margin-top: 3px
+    font-size: 1rem
+    letter-spacing: 1px
+    &__item
+      margin-left: 30px
+    &__link
+      text-decoration: none
+      color: $white
+      display: block
+      &:hover
+        &::after
+          width: 100%
+      &::after
+        content: ''
+        display: block
+        width: 0%
+        margin: 5px auto 0
+        border-bottom: 1px solid $white
+        transition: width .3s
+
+
+@media ( max-width: 768px )
+  .header
+    &-navbar
+      justify-content: center
+      &__logo
+        display: none
+    &-menu
+      &__item
+        margin: 0 14px
+

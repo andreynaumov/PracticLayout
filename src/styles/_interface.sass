@@ -1,0 +1,46 @@
+*
+  box-sizing: border-box
+
+html
+  font-size: 16px
+
+input , textarea
+  padding: 0
+  border: none
+  background-color: transparent
+  
+
+.container
+  max-width: 1170px
+  margin: auto
+
+.section
+  padding: 120px 0
+  &-title
+    font-size: 1.7rem
+    line-height: 2.5rem
+    letter-spacing: .125rem
+    text-transform: uppercase
+    +MonMed
+  &-subtitle
+    display: block
+    margin: 25px auto 35px
+    max-width: 630px
+    font-size: 1.1rem
+    line-height: 2.25rem
+    letter-spacing: .03rem
+    +MonReg
+
+
+
+
+@media ( max-width: 1200px )
+  html
+    font-size: 14px
+  .container
+    max-width: 90%
+
+@media ( max-width: 768px )
+  html
+    font-size: 12px
+  

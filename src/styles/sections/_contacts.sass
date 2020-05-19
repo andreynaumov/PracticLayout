@@ -1,0 +1,128 @@
+.contacts
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../image/contacts/bg-contacts.jpg)
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  &-wrap
+    display: flex
+    justify-content: space-between
+  &-form
+    width: 100%
+    &__title
+      flex-basis: 100%
+      text-transform: uppercase
+      color: #e2e2e2
+      font-size: 2.25rem
+      letter-spacing: 2px
+      +MonSem
+    &__main
+      &_input
+        width: 100%
+        padding: 10px 10px 10px 50px
+        border-bottom: 1px solid rgba(224, 224, 224, 0.4)
+        color: $white
+        font-size: 1.25rem
+        letter-spacing: 2px
+        transition: .2s
+        &:focus
+          border-bottom: 1px solid rgba(224, 224, 224, 1)
+      &_button
+      &_name
+        flex-basis: 45%
+      &_email
+        flex-basis: 45%
+      &_message
+        flex-basis: 100%
+  &-about
+    padding: 48px 110px 70px 70px
+    background-color: $white
+    border-radius: 5px
+    &__title
+      margin-bottom: 70px
+      text-transform: uppercase
+      color: #6e6c6c
+      font-size: 2.5rem
+      letter-spacing: 2px
+      +MonSem
+    &__info
+      max-width: 300px
+      font-size: 1.25rem
+      letter-spacing: 1px
+      +MonReg
+    &__item
+      display: flex
+      margin-bottom: 50px
+    &__logo
+      display: block
+      align-self: flex-start
+      margin: 0 20px 0 10px
+    &__text
+.form
+  display: flex
+  justify-content: space-between
+  align-content: space-between
+  flex-wrap: wrap
+  height: 100%
+  padding-right: 130px 
+  &-input
+    position: relative
+    &__logo
+      position: absolute
+      left: 10px
+      top: 50%
+      bottom: 50%
+      margin: auto
+      &_width
+        position: absolute
+        left: 10px
+        top: 10px
+    &__name
+      +MonReg
+    &__email
+      +MonReg
+    &__message
+      width: 100%
+      font-size: 1.25rem
+      +MonReg
+  &-button
+    padding: 15px 60px
+    border-radius: 3px
+    color: $button-portfolio
+    background-color: $white
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 1.1rem
+    border: none
+    +MonSem
+
+  
+
+@media  ( max-width: 1200px )
+  .contacts
+    &-wrap
+      flex-direction: column
+      align-items: center
+  .form
+    height: 400px
+    margin-bottom: 70px
+    padding-right: 0
+    &-button
+      margin: auto
+
+
+@media  ( max-width: 768px )
+  .contacts
+    &-about
+      padding: 30px
+      &__title
+        text-align: center
+        margin-bottom: 30px
+      &__item
+        margin-bottom: 25px
+    &-form
+      &__main
+        &_name
+          flex-basis: 100%
+        &_email
+          flex-basis: 100%
+  
